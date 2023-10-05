@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>built_in_filter</h1>
+        <h1>{{data}}</h1>
+        <h1>{{data|upper}}</h1>
+        <h1>{{data|lower}}</h1>
+        <h1>{{data|title}}</h1>
+        <h1>{{data|capfirst}}</h1>
+
+        <h1>{{dt}}</h1>
+        <h1>{{dt|date:'d'}}</h1>
+        <h1>{{dt|date:'j'}}</h1>
+        <h1>{{dt|date:'jS'}}</h1>
+;
+        <h1 style="color:red;">for months</h1> 
+        <h1>{{dt|date:'m'}}</h1>
+        <h1>{{dt|date:'n'}}</h1>
+        <h1>{{dt|date:'b'}}</h1>
+        <h1>{{dt|date:'M'}}</h1>
+        <h1>{{dt|date:'F'}}</h1>
+
+        <h1 style="color:blue;"> for years </h1>
+        <h1>{{dt|date:'y'}}</h1>
+        <h1>{{dt|date:'Y'}}</h1>
+
+        <h1 style="color:red;">for weeks</h1>
+        <h1>{{dt|date:'D'}}</h1>
+        <h1>{{dt|date:'l'}}</h1> 
+
+
+        <h1 style="color:rgb(34, 2, 2);">outer number not included like slicing</h1>
+        <h1>{{data|truncatechars:'3'}}</h1>
+        <h1>{{data|truncatechars:'6'}}</h1>
+        <h1>{{data|slice:'6'}}</h1>
+        <h1>{{data|slice:'3'}}</h1>
+
+        
+        <h1 style="color:rgb(176, 104, 104);">Pluralizations</h1>
+        <h1>I have {{cnt}} dog{{cnt|pluralize}} </h1>
+        <h1>I have {{cnt}} mango{{cnt|pluralize:'es'}}</h1>
+        <h1>This {{cnt}} dog{{cnt|pluralize}}  {{cnt|pluralize:'is,are'}} mine </h1>
+
+
+    </center>
+</body>
+</html>
